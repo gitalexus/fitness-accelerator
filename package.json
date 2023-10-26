@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "fitness-accelerator",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Первый проект акселератора - Фитнес центр",
   "browserslist": [
     "last 3 versions",
     "IE 11",
