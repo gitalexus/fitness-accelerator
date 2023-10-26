@@ -590,6 +590,11 @@ button,
   }
 }
 
+.container__sitemap-logo {
+  background-color: #102654;
+  padding: 22px;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
