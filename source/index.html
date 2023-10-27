@@ -25,8 +25,8 @@
         <div class="container header__container">
           <a href="index.html" class="header__link-logo" aria-label="Перейти на главную страницу.">
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg" width="102" height="22">
-              <source type="image/webp" media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg" width="111" height="24">
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg" width="102" height="22">
+              <source media="(max-width: 1365px)" srcset="img/svg/logo-tablet.svg" width="111" height="24">
               <img src="img/svg/logo-desktop.svg" width="120" height="26" alt="">
             </picture>
           </a>
@@ -47,8 +47,10 @@
               </div>
               <div class="hero__image-wrapper">
                 <picture>
-                  <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
-                  <img src="img/hero.jpg" alt="" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" width="500" height="524">
+                  <source media="(max-width: 1365px)" type="image/webp" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+                  <source media="(max-width: 1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                  <img src="img/hero-desktop.jpg" alt="" srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
                 </picture>
               </div>
             </div>

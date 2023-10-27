@@ -21,6 +21,11 @@
     color: $text-color-inverse;
     outline-color: $text-color-inverse;
     padding: 27px 56px;
+
+    @include vp-1365 {
+      padding: 22px 34px;
+    }
+
   }
   // &--red {
   //   background-color: $color-torch-red;

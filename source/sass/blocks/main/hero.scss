@@ -3,32 +3,78 @@
   background: $hero-bg-gradient;
   color: $text-color-inverse;
   text-align: right;
+
+  @include vp-1365 {
+    padding-top: $header-tablet-height;
+  }
+
+  @include vp-767 {
+    padding-top: $header-mobile-height;
+  }
 }
 
 .hero__content {
   display: grid;
   grid-template-columns: 115px 340px auto;
+  padding-bottom: 120px;
+  position: relative;
+
+  @include vp-1365 {
+    grid-template-columns: 113px 241px auto;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 113px 162px;
+    width: 290px;
+    gap: 15px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+  }
 }
 
 .hero__image-wrapper img {
   width: 500px;
   height: 524px;
   object-fit: cover;
+
+  @include vp-1365 {
+    width: 42.18vw;
+    height: auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .hero__features {
   line-height: 22px;
   align-self: center;
+  margin: 0;
+
+  @include vp-767 {
+    padding: 159px 0 50px;
+    align-self: start;
+    line-height: 20px;
+  }
 }
 
 .hero__action-scope {
   align-self: center;
   padding: 62px 70px 62px 0;
+
+  @include vp-1365 {
+    padding: 31px 30px 31px 26px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    padding-top: 35px;
+  }
 }
 
 .hero__city {
-
-
   font-family: $ff-primary;
   font-size: 54px;
   font-weight: 600;
@@ -38,6 +84,19 @@
   margin-bottom: 10px;
   padding: 0;
   text-transform: uppercase;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 14px;
+  }
 }
 
 .hero__caption {
@@ -49,4 +108,31 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 50px;
+
+  @include vp-1365 {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: normal;
+  }
+
+  @include vp-767 {
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 1.86px;
+    margin-bottom: 60px;
+  }
+}
+
+.hero__action-link {
+  @include vp-767 {
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90.62vw;
+    min-width: 290px;
+  }
 }
