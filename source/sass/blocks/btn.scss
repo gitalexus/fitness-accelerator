@@ -3,8 +3,9 @@
   padding: 27px 44px;
   color: $text-color-main;
   background-color: $color-transparent;
-  outline: 2px solid $text-color-main;
-  outline-offset: -1px;
+  box-shadow: inset 0px 0px 0px 2px $text-color-main;
+  border: none;
+
   cursor: pointer;
   text-align: center;
 
@@ -15,21 +16,33 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
 
+  user-select: none;
+
   transition: opacity $trans-default;
 
   &--inverse {
     color: $text-color-inverse;
-    outline-color: $text-color-inverse;
+    box-shadow: inset 0px 0px 0px 2px $text-color-inverse;
     padding: 27px 56px;
 
     @include vp-1365 {
       padding: 22px 34px;
     }
 
+    @include hover-focus {
+      color: $text-color-accent;
+      background-color: $button-color-stroke;
+      outline: none;
+    }
+
+    @include active {
+      color: $text-color-main;
+      background-color: $button-color-stroke;
+    }
+
+
+
   }
-  // &--red {
-  //   background-color: $color-torch-red;
-  // }
 
   // &:disabled {
   //   opacity: 0.5;
