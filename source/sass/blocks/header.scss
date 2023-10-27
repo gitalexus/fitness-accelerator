@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  width: 100%;
+
+  &--sitemap {
+    position: static;
+  }
+}
+
+.header__container {
+  padding: 30px 103px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link-logo {
+  display: block;
+}
+.header__link-logo img{
+  display: block;
+}
+
+.header__phone {
+  font-family: $ff-secondary;
+  color: $text-color-inverse;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}

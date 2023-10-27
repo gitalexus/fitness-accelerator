@@ -1,15 +1,27 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
+  padding: 27px 44px;
   color: $text-color-main;
-
   background-color: $color-transparent;
-  border: 2px solid $text-color-main;
+  outline: 2px solid $text-color-main;
+  outline-offset: -1px;
   cursor: pointer;
+  text-align: center;
+
+  font-family: $ff-secondary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 
   transition: opacity $trans-default;
 
+  &--inverse {
+    color: $text-color-inverse;
+    outline-color: $text-color-inverse;
+    padding: 27px 56px;
+  }
   // &--red {
   //   background-color: $color-torch-red;
   // }

@@ -9,39 +9,49 @@
     <link rel="icon" href="img/favicons/favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-    <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-300.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-400.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-700.woff2" type="font/woff2" as="font">
-    <link rel="preload" href="fonts/rouble.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
+
       <header class="header">
         <div class="container header__container">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/">
-            <source type="image/webp" media="(min-width: _bp-desktop+1)" srcset="img/_path 1x, img/_path.webp 2x">
-            <source type="image/webp" media="(max-width: _bp-desktop)" srcset="img/_path 1x, img/_path.webp 2x">
-            <source type="image/webp" media="(min-width: _bp-mobile)" srcset="img/_path 1x, img/_path 2x">
-            <source type="image/webp" media="(min-width: _bp-desktop+1)" srcset="img/_path 1x, img/_path 2x">
-            <source type="image/webp" media="(max-width: _bp-mobile)" srcset="img/_path 1x, img/_path 2x">
-            <img class="map__image" src="img/_path" width="_mobile-width" height="420" alt="">
-          </picture>
+          <a href="index.html" class="header__link-logo" aria-label="Перейти на главную страницу.">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg" width="102" height="22">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="img/svg/logo_tablet.svg" width="111" height="24">
+              <img src="img/svg/logo-desktop.svg" width="120" height="26" alt="">
+            </picture>
+          </a>
+          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
         </div>
       </header>
-
       <main>
-        <section class="intro">
+        <h1 class="visually-hidden">Главная страница сайта фитнес центра "SUPERGYM"</h1>
+        <section class="hero">
+          <h2 class="visually-hidden">Презентация тренажерного зала</h2>
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="hero__content">
+              <p class="hero__features">Тренажёрный зал Групповые занятия Кардио-зона</p>
+              <div class="hero__action-scope">
+                <p class="hero__city">Омск</p>
+                <p class="hero__caption">Фитнес центр</p>
+                <a class="btn btn--inverse hero__action-link" href="index.html#buy-subscription">Купить абонемент</a>
+              </div>
+              <div class="hero__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
+                  <img src="img/hero.jpg" alt="" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" width="500" height="524">
+                </picture>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -49,35 +59,6 @@
         <div class="container"></div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

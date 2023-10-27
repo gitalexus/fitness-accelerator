@@ -1,0 +1,52 @@
+.hero {
+  padding-top: $header-desktop-height;
+  background: $hero-bg-gradient;
+  color: $text-color-inverse;
+  text-align: right;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 115px 340px auto;
+}
+
+.hero__image-wrapper img {
+  width: 500px;
+  height: 524px;
+  object-fit: cover;
+}
+
+.hero__features {
+  line-height: 22px;
+  align-self: center;
+}
+
+.hero__action-scope {
+  align-self: center;
+  padding: 62px 70px 62px 0;
+}
+
+.hero__city {
+
+
+  font-family: $ff-primary;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.hero__caption {
+  font-family: $ff-primary;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 50px;
+}
