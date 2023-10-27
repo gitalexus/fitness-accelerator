@@ -2,25 +2,25 @@
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  color: $text-color-main;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-transparent;
+  border: 2px solid $text-color-main;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  // &--red {
+  //   background-color: $color-torch-red;
+  // }
 
-  &:disabled {
-    opacity: 0.5;
+  // &:disabled {
+  //   opacity: 0.5;
 
-    pointer-events: none;
-  }
+  //   pointer-events: none;
+  // }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
+  // @include hover-focus {
+  //   opacity: 0.8;
+  // }
 }
