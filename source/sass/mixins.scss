@@ -5,14 +5,14 @@
 }
 
 @mixin active {
-  &:active:not(.focus-visible) {
+  &:active:not(.focus-visible):not(:disabled) {
     @content;
   }
 }
 
 @mixin hover-focus {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover:not(.focus-visible):not(:disabled) {
       @content;
     }
   }

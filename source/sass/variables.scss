@@ -7,7 +7,7 @@
 $text-color-main:              #102654;
 $text-color-inverse:           #ffffff;
 $text-color-accent:            #103aae;
-$text-gradient-color-extra:    linear-gradient(128deg, rgb(209, 10, 66) 0%, rgb(0, 65, 202) 45.58%);
+$text-gradient-color-extra:      linear-gradient(128deg, rgb(209, 10, 66) 0%, rgb(0, 65, 202) 45.58%);
 
 /* button colors */
 $button-color-stroke:           #ffffff;
@@ -17,13 +17,13 @@ $button-gradient-color-extra:     linear-gradient(97deg, rgb(237, 2, 51) 17.6%, 
 $tab-color-state:               #d10a42;
 
 /* backgound colors */
-$bg-color-main:                #ffffff;
+$bg-color-main:                 #ffffff;
 $bg-color-extra:                #f8f9fc;
 $bg-color-banner:               #ed0233;
 $bg-color-dark:$bg-color-banner #102654;
 $bg-gradient:                     conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23deg, #b80027 313.3deg);
 $bg-color-footer:               #030a1a;
-$bg-color-extra:                #1c3374;
+$bg-color-block-extra:          #1c3374;
 
 /* icon colors */
 $icon-color:                    #ffffff;

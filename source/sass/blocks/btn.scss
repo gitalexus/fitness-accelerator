@@ -4,6 +4,7 @@
   color: $text-color-main;
   background-color: $color-transparent;
   box-shadow: inset 0px 0px 0px 2px $text-color-main;
+
   border: none;
 
   cursor: pointer;
@@ -40,17 +41,9 @@
       background-color: $button-color-stroke;
     }
 
-
-
+    &:disabled {
+      opacity: 0.5;
+      cursor: auto;
+    }
   }
-
-  // &:disabled {
-  //   opacity: 0.5;
-
-  //   pointer-events: none;
-  // }
-
-  // @include hover-focus {
-  //   opacity: 0.8;
-  // }
 }
