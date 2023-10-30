@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 27px 44px;
+  padding: 27px 43px 27px 44px;
   color: $text-color-main;
   background-color: $color-transparent;
   box-shadow: inset 0px 0px 0px 2px $text-color-main;
@@ -45,5 +45,25 @@
       opacity: 0.5;
       cursor: auto;
     }
+  }
+
+  &--blue-bg {
+    background-color: $bg-color-main;
+
+    @include hover-focus {
+      box-shadow: none;
+      color: $text-color-inverse;
+      background: $button-linear-gradient;
+    }
+
+    @include active {
+      color: rgba($text-color-inverse, 0.7);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: auto;
+    }
+
   }
 }

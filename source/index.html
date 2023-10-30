@@ -57,7 +57,7 @@
             </div>
           </div>
         </section>
-        <section class="gym container container--gym">
+        <section class="gym gym__container container">
           <div class="gym__text-container">
             <h2>Тренажерный зал</h2>
             <h3>Просторный зал площадью 900 кв/м</h3>
@@ -84,6 +84,75 @@
             </picture>
           </div>
         </section>
+        <section id="subscriptions" class="subscriptions">
+          <div class="container">
+            <h2 class="subscriptions__title">Абонементы</h2>
+            <ul class="subscriptions__tabs">
+              <li class="subscriptions__tabs-item">
+                <button class="subscriptions__tab tab tab--active">1 месяц</button>
+              </li>
+              <li class="subscriptions__tabs-item">
+                <button class="subscriptions__tab tab">6 месяцев</button>
+              </li>
+              <li class="subscriptions__tabs-item">
+                <button class="subscriptions__tab tab">12 месяцев</button>
+              </li>
+            </ul>
+            <ul class="subscriptions__list">
+              <li class="subscriptions__item">
+                <article class="subscriptions__card">
+                  <h3 class="subscriptions__card-title">С тренером</h3>
+                  <p class="subscriptions__desc">12 занятий</p>
+                  <p class="subscriptions__price" data-text="5000">5000
+                    <svg width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
+                  <button class="btn btn--blue-bg subscriptions__card-button" type="button">Купить абонемент</button>
+                </article>
+              </li>
+              <li class="subscriptions__item">
+                <article class="subscriptions__card">
+                  <h3 class="subscriptions__card-title">Дневной</h3>
+                  <p class="subscriptions__desc">с 8:00 до 17:00 </p>
+                  <p class="subscriptions__price" data-text="1700">1700
+                    <svg width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
+                  <button class="btn btn--blue-bg subscriptions__card-button" type="button">Купить абонемент</button>
+                </article>
+              </li>
+              <li class="subscriptions__item">
+                <article class="subscriptions__card">
+                  <h3 class="subscriptions__card-title">Полный день</h3>
+                  <p class="subscriptions__desc">с 8:00 до 22:00 </p>
+                  <p class="subscriptions__price" data-text="2700">2700
+                    <svg width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
+                  <button class="btn btn--blue-bg subscriptions__card-button" type="button">Купить абонемент</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="subscriptions__plates">
+            <picture>
+              <source type="image/webp" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/weight-plates-desktop.webp 1x, img/weight-plates-desktop@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
+              <img src="img/weight-plates.png" srcset="img/weight-plates-desktop.png 1x, img/weight-plates-desktop@2x.png 2x" alt="">
+            </picture>
+          </div>
+        </section>
+        <section class="competition">
+          <div class="container">
+
+          </div>
+        </section>
+        <!-- - 6 месяцев: 30 000/10 200/16 200
+        - 12 месяцев: 60 000/20 400/32 400 -->
       </main>
       <footer>
         <div class="container"></div>

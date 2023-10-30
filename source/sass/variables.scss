@@ -14,6 +14,7 @@ $button-color-stroke:           #ffffff;
 $button-color-stroke-inverse:   #102654;
 $button-color-stroke-extra:     #1c3374;
 $button-gradient-color-extra:     linear-gradient(97deg, rgb(237, 2, 51) 17.6%, rgb(0, 62, 183) 95.31%);
+$button-linear-gradient:           linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
 $tab-color-state:               #d10a42;
 
 /* backgound colors */
@@ -48,6 +49,10 @@ $header-mobile-height:            54px;
 
 // Gradient
 $hero-bg-gradient:                linear-gradient(90deg, rgb(28, 52, 119) 0%, rgb(28, 52, 119) 0.01%, 	rgb(26, 53, 120) 39.11%, 	rgb(115, 24, 75) 75.5%, 		rgb(180, 2, 42) 100%);
+// $linear-gradient-angel:           linear-gradient(130deg, #ED0233 -10.6%, #003EB7 175.31%);
+// $linear-gradient-angel:           linear-gradient(130deg, #ED0233 -10.6%, #003EB7 175.31%);
+$linear-gradient-angel:           linear-gradient(130deg, #D10A42 17.6%, #00359F 95.31%);;
+
 
 // Typography
 // ---------------------------------

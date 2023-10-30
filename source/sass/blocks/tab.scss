@@ -1,0 +1,60 @@
+.tab {
+  border: none;
+  padding: 13px 0;
+  background-color: transparent;
+  color: $text-color-main;
+  opacity: 0.5;
+  text-align: center;
+  font-family: $ff-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  position: relative;
+
+  &--active {
+    cursor: auto;
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $bg-color-banner;
+      bottom: -1px;
+    }
+  }
+
+  @include hover-focus {
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $bg-color-banner;
+      bottom: -1px;
+    }
+  }
+
+  // @include active {
+  //   // position: relative;
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     display: block;
+  //     width: 100%;
+  //     height: 2px;
+  //     background-color: $bg-color-banner;
+  //   }
+  // }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: auto;
+  }
+}
