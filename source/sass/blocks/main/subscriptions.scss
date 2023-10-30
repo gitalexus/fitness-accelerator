@@ -78,7 +78,6 @@
 .subscriptions__price {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
   color: $text-color-accent;
   font-size: 60px;
   font-weight: 700;
@@ -111,4 +110,18 @@
   width: 321px;
   height: 384px;
   transform: rotate(-30deg);
+}
+
+.subscriptions__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.subscriptions__price-wrapper svg {
+  position: relative;
+  z-index: 10;
 }

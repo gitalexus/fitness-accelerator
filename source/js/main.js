@@ -5,14 +5,19 @@ import {Form} from './modules/form-validate/form';
 // идентификатор видео на youtube
 const videoId = '9TZXsZItgdw';
 
-// ---------------------------------
-window.addEventListener('DOMContentLoaded', () => {
+// цены подписок
+const SUBSCRIPTIONS = [
+  [5000, 1700, 2700],
+  [30000, 10200, 16200],
+  [60000, 20400, 32400]
+];
 
+function initVideo() {
   const videoContainer = document.querySelector('.gym__video');
   const playButton = document.querySelector('.gym__video button');
   const placeHolder = document.querySelector('.gym__video img');
 
-  if (playButton !== null || videoContainer !== null || placeHolder !== null) {
+  if (playButton !== null && videoContainer !== null && placeHolder !== null) {
     playButton.addEventListener('click', ()=> {
       const iframe = createIframe(videoId);
       videoContainer.appendChild(iframe);
@@ -20,8 +25,43 @@ window.addEventListener('DOMContentLoaded', () => {
       placeHolder.remove();
     });
   }
+}
 
-  // playButton.addEventListener('click', play);
+function initActionButton() {
+  const subscription = document.querySelector('#subscriptions');
+  const heroActionButton = document.querySelector('.hero__action-link');
+
+  if (subscription !== null && heroActionButton !== null) {
+    heroActionButton.addEventListener('click', ()=> {
+      subscription.scrollIntoView({block: 'start', behavior: 'smooth'});
+    });
+  }
+}
+
+function initSubscriptions() {
+  const subscriptionsTabs = document.querySelectorAll('.subscriptions__tab');
+
+  const removeActiveClass = () => {
+    subscriptionsTabs.forEach((tab) => {
+      tab.classList.remove('tab--active');
+    });
+  };
+
+  subscriptionsTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      removeActiveClass();
+      tab.classList.add('tab--active');
+      setSubscriptions(index);
+    });
+  });
+}
+
+// ---------------------------------
+window.addEventListener('DOMContentLoaded', () => {
+
+  initActionButton();
+  initVideo();
+  initSubscriptions();
 
   // Utils
   // ---------------------------------
@@ -40,6 +80,17 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
+
+function setSubscriptions(index) {
+  const cards = document.querySelectorAll('.subscriptions__card');
+  if (cards.length >= 3) {
+    for (let i = 0; i < 3; i++) {
+      const price = cards[i].querySelector('.subscriptions__price');
+      price.textContent = SUBSCRIPTIONS[index][i];
+      price.setAttribute('data-text', SUBSCRIPTIONS[index][i]);
+    }
+  }
+}
 
 // ---------------------------------
 
