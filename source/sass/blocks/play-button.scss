@@ -32,12 +32,12 @@
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-bottom-width: 8.5px;
-    border-top-width: 8.5px;
-    border-left: 17px solid $bg-color-main;
+    border-bottom-width: 7px;
+    border-top-width: 7px;
+    border-left: 15px solid $bg-color-main;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) translateX(4px);
+    transform: translate(-50%, -50%) translate(2px, -1px);
   }
 
   @include vp-1365 {
@@ -77,8 +77,8 @@
   }
 
   @include active {
-    width: 58px;
-    height: 58px;
+    width: 52px;
+    height: 52px;
 
     @include vp-1365 {
       width: 41px;
