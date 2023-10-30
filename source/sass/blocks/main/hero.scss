@@ -53,6 +53,9 @@
   align-self: center;
   margin: 0;
   margin-right: 2px;
+  @include vp-1365 {
+    margin-right: 0;
+  }
 
   @include vp-767 {
     padding: 159px 0 50px;

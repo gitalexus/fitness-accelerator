@@ -8,21 +8,13 @@
 
   @include vp-1365 {
     display: block;
-    // padding-top: 100px;
     padding-top: 13.02vw;
     padding-bottom: 183px;
     text-align: center;
   }
 
   @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-}
-
-.gym__container {
-  @include vp-767 {
-    padding: 0;
+    padding: 70px 0;
   }
 }
 

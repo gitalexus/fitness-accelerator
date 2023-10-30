@@ -11,6 +11,17 @@
   cursor: pointer;
   position: relative;
 
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px; /* 100% */
+    padding: 14px 0 17px;
+  }
+
   &--active {
     cursor: auto;
     opacity: 1;
@@ -39,19 +50,6 @@
       bottom: -1px;
     }
   }
-
-  // @include active {
-  //   // position: relative;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     display: block;
-  //     width: 100%;
-  //     height: 2px;
-  //     background-color: $bg-color-banner;
-  //   }
-  // }
 
   &:disabled {
     opacity: 0.3;
