@@ -8,6 +8,10 @@
   @include vp-1365 {
     padding: 13.02vw 0;
   }
+
+  @include vp-767 {
+    padding: 21.87vw 0;
+  }
 }
 
 .competition__banner {
@@ -19,6 +23,10 @@
   @include vp-1365 {
     grid-template-columns: 38.02vw 1fr;
     min-height: 42.18vw;
+  }
+
+  @include vp-767 {
+    display: block;
   }
 }
 
@@ -32,6 +40,15 @@
     flex-direction: column;
     padding: 5.20vw 5.85vw 5.85vw;
     min-height: 42.18vw;
+  }
+
+  @include vp-767 {
+    min-height: 309px;
+    padding: 40px 12.5vw;
+  }
+
+  @include vp-319 {
+    padding: 40px;
   }
 }
 
@@ -49,6 +66,12 @@
     line-height: 46px; /* 95.833% */
     letter-spacing: 1.44px;
   }
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+  }
 }
 
 .competition__image {
@@ -61,8 +84,6 @@
   width: 100%;
   object-fit: cover;
   object-position: right center;
-
-
 }
 
 .competition__wrapper {
@@ -77,8 +98,13 @@
     font-weight: 300;
     line-height: 24px;
     gap: 3.35vw;
-    // margin-bottom: 7px;
     margin-bottom: 1vw;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 117px 1fr;
+    gap: 37px;
+    margin-bottom: 13px;
   }
 }
 
@@ -92,12 +118,15 @@
   border-top: 1px solid $text-color-inverse;
 }
 
-// how not select last element?
 .competition__datetime dd:not(:last-of-type) {
   margin-bottom: 19px;
 
   @include vp-1365 {
     margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 6px;
   }
 }
 
@@ -107,15 +136,27 @@
   @include vp-1365 {
     margin-bottom: 0;
   }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.competition__month{
+.competition__month {
+  grid-area: month;
+  margin-top: 7px;
   font-size: 14px;
   line-height: 14px;
 
   @include vp-1365 {
     font-size: 10px;
     line-height: 100%;
+    margin-top: 3px;
+  }
+
+  @include vp-767 {
+    margin-top: 4px;
   }
 }
 
@@ -148,6 +189,10 @@
     line-height: 24px;
     margin-top: 1px;
   }
+
+  @include vp-767 {
+   margin-top: 2px;
+  }
 }
 
 .competition__date {
@@ -156,15 +201,6 @@
 
   @include vp-1365 {
     margin-right: 4px;
-  }
-}
-
-.competition__month {
-  grid-area: month;
-  margin-top: 7px;
-
-  @include vp-1365 {
-    margin-top: 3px;
   }
 }
 
@@ -177,7 +213,11 @@
 
   @include vp-1365 {
     margin: 0;
-    // margin-bottom: 21px;
     margin-bottom: auto;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
