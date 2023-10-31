@@ -24,7 +24,7 @@
   &--inverse {
     color: $text-color-inverse;
     box-shadow: inset 0px 0px 0px 2px $text-color-inverse;
-    padding: 27px 56px;
+    padding: 27px 57px;
 
     @include vp-1365 {
       padding: 22px 34px;
@@ -72,6 +72,10 @@
       opacity: 0.3;
       cursor: auto;
     }
+  }
 
+  &--stretch {
+    width: 100%;
+    justify-content: center;
   }
 }

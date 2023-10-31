@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Первый проект акселератора HtmlAcademy.ru - 'Фитнес центр'">
     <title>Фитнес центр "SUPERGYM"</title>
     <link rel="icon" href="img/favicons/favicon.ico"> <!-- 32×32 -->
@@ -74,16 +74,26 @@
             <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp" width="660" height="401">
             <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg" width="100vw" height="313">
             <source media="(max-width: 1365px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg" width="100%" height="44.92vw">
-            <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" alt="">
+            <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" alt="" width="660" height="401">
+            <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp" width="100vw" height="313">
+            <source type="image/webp" media="(max-width: 1365px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp" width="100%" height="44.92vw">
+            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp" width="660" height="401">
+            <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg" width="100vw" height="313">
+            <source media="(max-width: 1365px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg" width="100%" height="44.92vw">
+            <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" alt=""> -->
           </picture>
           <div class="gym__video">
             <button class="play-button" type="button">
             </button>
             <picture>
               <source type="image/webp" media="(min-width: 1366)" srcset="img/video-mobile-tablet.webp 1x, img/video-mobile-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x" width="364" height="228">
+              <source media="(max-width: 1365)" srcset="img/video-mobile-tablet.jpg 1x, img/video-mobile-tablet@2x.jpg 2x">
+              <img src="img/video-desktop.jpg" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="364" height="228" alt="">
+              <!-- <source type="image/webp" media="(min-width: 1366)" srcset="img/video-mobile-tablet.webp 1x, img/video-mobile-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
               <source media="(max-width: 1365)" srcset="img/video-mobile-tablet.jpg 1x, img/video-mobile-tablet@2x.jpg 2x">
-              <img src="img/video-desktop.jpg" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" alt="">
+              <img src="img/video-desktop.jpg" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" alt=""> -->
             </picture>
           </div>
         </section>
@@ -146,15 +156,52 @@
           <div class="subscriptions__plates">
             <picture>
               <source type="image/webp" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/weight-plates-desktop.webp 1x, img/weight-plates-desktop@2x.webp 2x" width="321" height="324">
+              <source type="image/png" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
+              <img src="img/weight-plates.png" srcset="img/weight-plates-desktop.png 1x, img/weight-plates-desktop@2x.png 2x" width="321" height="324" alt="">
+              <!-- <source type="image/webp" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/weight-plates-desktop.webp 1x, img/weight-plates-desktop@2x.webp 2x">
               <source type="image/png" media="(max-width: 1365)" srcset="img/weight-plates-tablet.webp 1x, img/weight-plates-tablet@2x.webp 2x">
-              <img src="img/weight-plates.png" srcset="img/weight-plates-desktop.png 1x, img/weight-plates-desktop@2x.png 2x" alt="">
+              <img src="img/weight-plates.png" srcset="img/weight-plates-desktop.png 1x, img/weight-plates-desktop@2x.png 2x" alt=""> -->
             </picture>
           </div>
         </section>
         <section class="competition">
           <div class="container">
+            <div class="competition__banner">
+              <div class="competition__text-content">
+                <div class="competition__wrapper">
+                  <h2 class="competition__title">SUPER GAMES</h2>
+                  <dl class="competition__datetime">
+                    <dt class="competition__label">Дата</dt>
+                    <dd class="competition__complex-value">
+                      <b class="competition__value competition__date">7</b>
+                      <span class="competition__month">Марта</span>
+                      <span class="competition__year">2019</span>
+                    </dd>
+                    <dt class="competition__label">Время</dt>
+                    <dd>
+                      <b class="competition__value">12:00</b>
+                    </dd>
+                  </dl>
+                </div>
+                <p class="competition__desc">Ежегодные соревнования по CrossFit</p>
+                <a class="btn btn--inverse btn--stretch" href="#">Заполнить заявку</a>
+              </div>
+              <div class="competition__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/competition-mobile.webp 1x, img/competition-mobile@2x.webp 2x"">
+                  <source type="image/webp" media="(max-width: 1365px)" srcset="img/competition-tablet.webp 1x, img/competition-tablet@2x.webp 2x"">
+                  <source type="image/webp" srcset="img/competition-desktop.webp 1x, img/competition-desktop@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" srcset="img/competition-mobile.jpeg 1x, img/competition-mobile@2x.jpeg 2x"">
+                  <source type="image/jpeg" media="(max-width: 1365px)" srcset="img/competition-tablet.jpeg 1x, img/competition-tablet@2x.jpeg 2x"">
+                  <img src="img/competition-desktop.jpg" srcset="img/competition-desktop.jpg 1x, img/competition-desktop@2x.jpg 2x" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="competition__slider">
 
+            </div>
           </div>
         </section>
       </main>

@@ -1,3 +1,111 @@
 .competition {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.competition__banner {
+  display: grid;
+  grid-template-columns: 500px 1fr;
   min-height: 500px;
+  color: $text-color-inverse;
+}
+
+.competition__text-content {
+  background-color: $bg-color-banner;
+  padding: 80px;
+  min-height: 500px;
+}
+
+.competition__title {
+  margin: 0;
+  font-family: $ff-primary;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+}
+
+.competition__image {
+  width: 100%;
+  height: 100%;
+}
+
+.competition__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.competition__wrapper {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 68px;
+  margin-bottom: 23px;
+}
+
+.competition__datetime {
+  margin: 0;
+}
+
+.competition__datetime dd {
+  margin: 0;
+  width: fit-content;
+  border-top: 1px solid $text-color-inverse;
+}
+
+// how not select last element?
+.competition__datetime dd:not(:last-of-type) {
+  margin-bottom: 19px;
+}
+
+.competition__label {
+  margin-bottom: 7px;
+}
+
+.competition__month{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.competition__year{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.competition__complex-value {
+  display: grid;
+  grid-template-areas:
+    "date month"
+    "date year";
+}
+
+.competition__value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 4px;
+  display: block;
+}
+
+.competition__date {
+  grid-area: date;
+  margin-right: 7px;
+}
+
+.competition__month {
+  grid-area: month;
+  margin-top: 7px;
+}
+
+.competition__year {
+  grid-area: year;
+}
+
+.competition__desc {
+  margin-bottom: 56px;
 }
