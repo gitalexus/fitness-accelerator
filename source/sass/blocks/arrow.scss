@@ -20,6 +20,11 @@
     background-color: $bg-color-dark;
   }
 
+  &:active {
+    color: $text-color-inverse;
+    background-color: $bg-color-dark;
+  }
+
   &:disabled {
     opacity: 0.3;
   }

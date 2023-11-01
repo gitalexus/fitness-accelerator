@@ -15,52 +15,25 @@ const SUBSCRIPTIONS = [
 
 // desktop breakpoint 1366px
 const isDesktop = window.matchMedia('(min-width:1366px)');
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 40,
 
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
+function initJurySlider() {
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: '.jury__button--prev',
+      prevEl: '.jury__button--next',
+    },
+  });
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.jury__button--prev',
-    prevEl: '.jury__button--next',
-  },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-});
-
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   // direction: 'vertical',
-//   loop: true,
-//   slidesPerView: 2,
-//   freeMode: true,
-
-//   // If we need pagination
-//   // pagination: {
-//   //   el: '.swiper-pagination',
-//   // },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   // scrollbar: {
-//   //   el: '.swiper-scrollbar',
-//   // },
-// });
+  // убираем возможность фокуса с дубликатов слайдов
+  const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
+  duplicates.forEach((duplicate) => {
+    duplicate.setAttribute('tabindex', '-1');
+  });
+}
 
 function initVideo() {
   const videoContainer = document.querySelector('.gym__video');
@@ -115,12 +88,22 @@ function initJuryCards() {
         card.classList.toggle('is-show');
       }
     });
-    card.addEventListener('mouseenter', () => {
+    card.addEventListener('pointerenter', () => {
       if (isDesktop.matches) {
         card.classList.add('is-show');
       }
     });
-    card.addEventListener('mouseleave', () => {
+    card.addEventListener('focusin', () => {
+      if (isDesktop.matches) {
+        card.classList.add('is-show');
+      }
+    });
+    card.addEventListener('pointerleave', () => {
+      if (isDesktop.matches && card !== document.activeElement) {
+        card.classList.remove('is-show');
+      }
+    });
+    card.addEventListener('focusout', () => {
       if (isDesktop.matches) {
         card.classList.remove('is-show');
       }
@@ -135,6 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initVideo();
   initSubscriptions();
   initJuryCards();
+  initJurySlider();
 
   // Utils
   // ---------------------------------
