@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.jury__slider-wrapper {
+  position: relative;
+}
+
 .jury__slider {
   position: relative;
 }
@@ -13,7 +17,7 @@
   top: 50%;
   transform: translate(0, -50%);
 
-  &--right {
+  &--next {
     left: auto;
     right: -76px;
   }
@@ -28,7 +32,7 @@
 
 .jury__title {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
   font-family: $ff-primary;
   font-size: 54px;
   font-weight: 600;
@@ -46,10 +50,7 @@
 }
 
 .jury__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin: 0;
+  // gap: 40px;
   padding: 0;
   list-style: none;
 }

@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import Swiper from './vendor/swiper';
 
 // идентификатор видео на youtube
 const videoId = '9TZXsZItgdw';
@@ -14,6 +15,52 @@ const SUBSCRIPTIONS = [
 
 // desktop breakpoint 1366px
 const isDesktop = window.matchMedia('(min-width:1366px)');
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.jury__button--prev',
+    prevEl: '.jury__button--next',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   // direction: 'vertical',
+//   loop: true,
+//   slidesPerView: 2,
+//   freeMode: true,
+
+//   // If we need pagination
+//   // pagination: {
+//   //   el: '.swiper-pagination',
+//   // },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   // scrollbar: {
+//   //   el: '.swiper-scrollbar',
+//   // },
+// });
 
 function initVideo() {
   const videoContainer = document.querySelector('.gym__video');
