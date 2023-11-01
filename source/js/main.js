@@ -12,6 +12,9 @@ const SUBSCRIPTIONS = [
   [60000, 20400, 32400]
 ];
 
+// desktop breakpoint 1366px
+const isDesktop = window.matchMedia('(min-width:1366px)');
+
 function initVideo() {
   const videoContainer = document.querySelector('.gym__video');
   const playButton = document.querySelector('.gym__video button');
@@ -56,12 +59,35 @@ function initSubscriptions() {
   });
 }
 
+function initJuryCards() {
+  const cards = document.querySelectorAll('[data-juryItem]');
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      if (!isDesktop.matches) {
+        card.classList.toggle('is-show');
+      }
+    });
+    card.addEventListener('mouseenter', () => {
+      if (isDesktop.matches) {
+        card.classList.add('is-show');
+      }
+    });
+    card.addEventListener('mouseleave', () => {
+      if (isDesktop.matches) {
+        card.classList.remove('is-show');
+      }
+    });
+  });
+}
+
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {
 
   initActionButton();
   initVideo();
   initSubscriptions();
+  initJuryCards();
 
   // Utils
   // ---------------------------------
@@ -106,7 +132,7 @@ function setSubscriptions(index) {
 // url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
 
 // для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
+// const breakpoint = window.matchMedia(`(min-width:1366px)`);
 // const breakpointChecker = () => {
 //   if (breakpoint.matches) {
 //   } else {

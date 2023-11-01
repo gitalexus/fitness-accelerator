@@ -1,0 +1,30 @@
+.arrow {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-main;
+  color: $text-color-main;
+  cursor: pointer;
+
+  @include hover-focus {
+    outline: 1px solid $text-color-main;
+  }
+
+  @include active {
+    color: $text-color-inverse;
+    background-color: $bg-color-dark;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &--right svg {
+    rotate: 180deg;
+  }
+}
