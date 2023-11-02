@@ -149,6 +149,12 @@
 
 .gym > picture > img {
   margin-top: 5px;
+
+  @include vp-1365 {
+    width: 100%;
+    height: 44.92vw;
+  }
+
   @include vp-767 {
     min-width: 320px;
     width: 100%;

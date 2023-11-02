@@ -23,8 +23,22 @@ function initJurySlider() {
     slidesPerView: 4,
     spaceBetween: 40,
     navigation: {
-      nextEl: '.jury__button--prev',
-      prevEl: '.jury__button--next',
+      nextEl: '.jury__button--next',
+      prevEl: '.jury__button--prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
     },
   });
 
@@ -94,9 +108,7 @@ function initJuryCards() {
       }
     });
     card.addEventListener('focusin', () => {
-      if (isDesktop.matches) {
-        card.classList.add('is-show');
-      }
+      card.classList.add('is-show');
     });
     card.addEventListener('pointerleave', () => {
       if (isDesktop.matches && card !== document.activeElement) {
@@ -104,9 +116,7 @@ function initJuryCards() {
       }
     });
     card.addEventListener('focusout', () => {
-      if (isDesktop.matches) {
-        card.classList.remove('is-show');
-      }
+      card.classList.remove('is-show');
     });
   });
 }
@@ -117,8 +127,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initActionButton();
   initVideo();
   initSubscriptions();
-  initJuryCards();
   initJurySlider();
+  initJuryCards();
 
   // Utils
   // ---------------------------------
