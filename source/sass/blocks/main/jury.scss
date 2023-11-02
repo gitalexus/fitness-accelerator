@@ -9,6 +9,10 @@
   @include vp-1365 {
     padding: 0 54px 0 56px;
   }
+
+  @include vp-767 {
+    padding: 0 10vw;
+  }
 }
 
 .jury__slider {
@@ -21,9 +25,9 @@
   top: 50%;
   transform: translate(0, -50%);
 
-   @include vp-1365 {
-    left: -2.6vw;
-   }
+    @include vp-1365 {
+      left: -2.6vw;
+    }
 
   &--next {
     left: auto;
@@ -42,10 +46,13 @@
   height: 294px;
 
   @include vp-1365 {
-    // width: 268px;
-    // height: 294px;
     width: 34.89vw;
     height: 38.28vw;
+  }
+
+  @include vp-767 {
+    width: 70.62vw;
+    height: 85.62vw;
   }
 }
 
@@ -74,6 +81,13 @@
     letter-spacing: 1.26px;
     margin-bottom: 25px;
   }
+
+  @include vp-767 {
+    margin-bottom: 43px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .jury__card-title {
@@ -86,9 +100,12 @@
 }
 
 .jury__list {
-  // gap: 40px;
   padding: 0;
   list-style: none;
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .jury__content {

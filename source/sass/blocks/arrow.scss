@@ -11,6 +11,11 @@
   color: $text-color-main;
   cursor: pointer;
 
+  @include vp-767 {
+    width: 33px;
+    height: 33px;
+  }
+
   @include hover-focus {
     outline: 1px solid $text-color-main;
   }
@@ -32,4 +37,10 @@
   &--right svg {
     rotate: 180deg;
   }
+}
+
+
+.arrow svg {
+  width: 10px;
+  height: 19px;
 }
