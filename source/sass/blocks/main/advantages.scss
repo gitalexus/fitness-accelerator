@@ -18,6 +18,13 @@
   grid-template-columns: 1fr 240px 1fr;
   column-gap: 60px;
   grid-auto-flow: dense;
+
+  @include vp-1365 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    column-gap: 6.51vw;
+    grid-auto-flow: initial;
+  }
 }
 
 .advantages__list-center {
@@ -62,6 +69,11 @@
 
   &--right {
     grid-column: 3/4;
+
+    @include vp-1365 {
+      // grid-column: 2/3;
+      grid-column: auto;
+    }
   }
 
 }
@@ -111,6 +123,12 @@
   text-align: center;
   min-height: 340px;
   transform: translateY(3px);
+
+  @include vp-1365 {
+    grid-column: span 2;
+    grid-row: span 1;
+    transform: none;
+  }
 }
 
 .advantages__item-center h3 {
