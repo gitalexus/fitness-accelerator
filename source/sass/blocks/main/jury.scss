@@ -1,6 +1,10 @@
 .jury {
   padding-bottom: 105px;
   position: relative;
+
+  @include vp-1365 {
+    padding-bottom: 87px;
+  }
 }
 
 .jury__slider-wrapper {
@@ -76,7 +80,7 @@
   // letter-spacing: 1.62px;
 
   @include vp-1365 {
-    // text-align: center;
+    text-align: center;
     // font-size: 42px;
     // line-height: 42px;
     // letter-spacing: 1.26px;
