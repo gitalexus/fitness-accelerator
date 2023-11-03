@@ -49,6 +49,7 @@
 
   &--blue-bg {
     background-color: $bg-color-main;
+    width: 100%;
 
     @include vp-1365 {
       padding: 23px 43px 21px 44px;

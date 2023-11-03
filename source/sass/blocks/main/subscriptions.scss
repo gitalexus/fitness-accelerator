@@ -17,28 +17,28 @@
 }
 
 .subscriptions__title {
-  margin: 0;
+  // margin: 0;
   margin-bottom: 20px;
-  color: $text-color-main;
-  font-family: $ff-primary;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 1.62px;
-  text-align: center;
+  // color: $text-color-main;
+  // font-family: $ff-primary;
+  // font-size: 54px;
+  // font-weight: 600;
+  // line-height: 54px;
+  // letter-spacing: 1.62px;
+  // text-align: center;
 
   @include vp-1365 {
     margin-bottom: 23px;
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 1.26px;
+    // font-size: 42px;
+    // font-weight: 600;
+    // line-height: 42px;
+    // letter-spacing: 1.26px;
   }
 
   @include vp-767 {
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0.96px;
+    // font-size: 32px;
+    // line-height: 32px;
+    // letter-spacing: 0.96px;
     margin-bottom: 7px;
   }
 }
@@ -46,7 +46,7 @@
 .subscriptions__tabs {
   list-style: none;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -102,8 +102,8 @@
 
 .subscriptions__card {
   position: relative;
-  min-height: 433px;
-  padding: 58px 71px;
+  min-height: 434px;
+  padding: 60px 70px 58px;
   text-align: center;
   background-color: $bg-color-main;
 
