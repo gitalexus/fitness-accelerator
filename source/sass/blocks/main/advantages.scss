@@ -6,6 +6,16 @@
   @include vp-1365 {
     padding: 100px 0;
   }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.advantages__contaiter {
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .advantages__title {
@@ -13,6 +23,10 @@
 
   @include vp-1365 {
     margin-bottom: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 54px;
   }
 }
 
@@ -29,6 +43,10 @@
     column-gap: 6.51vw;
     row-gap: 5.2vw;
     grid-auto-flow: initial;
+  }
+
+  @include vp-767 {
+    display: block;
   }
 }
 
@@ -52,6 +70,20 @@
     padding-top: 0;
     gap: 15px;
     min-height: auto;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 35px;
+  }
+
+  &--experience {
+    @include vp-767 {
+      margin-top: -6px;
+    }
   }
 
   &::before {
@@ -78,11 +110,14 @@
     grid-column: 3/4;
 
     @include vp-1365 {
-      // grid-column: 2/3;
       grid-column: auto;
     }
   }
 
+}
+
+.advantage_accent-content {
+  width: fit-content;
 }
 
 .advantage_accent-content em {
@@ -92,6 +127,11 @@
   font-style: normal;
   text-align: left;
   display: block;
+
+  @include vp-767 {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
 
 .advantage_accent-content b {
@@ -100,6 +140,14 @@
   line-height: 22px;
   display: block;
   text-align: left;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.advantage_accent-content--first b {
+  margin-bottom: 20.5px;
 }
 
 .advantage_text-content {
@@ -118,6 +166,12 @@
     line-height: 20px;
     margin-bottom: 11px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .advantage_text-content p {
@@ -125,6 +179,26 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+
+  @include vp-767 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0 51px;
+    text-align: center;
+  }
+}
+
+.advantage_text-content--second p {
+  @include vp-767 {
+    transform: translate(2px, -6px);
+  }
+}
+
+.advantage_text-content--comfort h3 {
+  @include vp-767 {
+    margin-bottom: 6px;
+  }
 }
 
 .advantages__item-center {
@@ -146,6 +220,14 @@
     justify-self: center;
     padding: 4.55vw;
   }
+
+  @include vp-767 {
+    margin-top: -3px;
+    margin-bottom: 12.5vw;
+    width: 100%;
+    padding: 29px 74px;
+    min-height: 224px;
+  }
 }
 
 .advantages__item-center h3 {
@@ -154,6 +236,12 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
+
+  @include vp-767 {
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 2vw;
+  }
 }
 
 .advantages__item-center b {
@@ -168,6 +256,12 @@
     line-height: 24px;
     margin-bottom: 3.12vw;
   }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 5.82vw;
+  }
 }
 
 .advantages__item-center p {
@@ -181,6 +275,12 @@
     font-size: 16px;
     line-height: 150%;
     margin: 0 60px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
