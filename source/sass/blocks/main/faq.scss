@@ -1,0 +1,25 @@
+.faq {
+  background-color: $bg-color-extra;
+  padding: 120px 0 119px;
+}
+
+.faq__container {
+  padding-right: 102px;
+}
+
+.faq__title {
+  text-align: left;
+  margin-bottom: 51px;
+}
+
+.faq__tabs {
+  display: grid;
+  grid-template-columns: 260px 860px;
+  gap: 40px;
+}
+
+.faq__controls {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}

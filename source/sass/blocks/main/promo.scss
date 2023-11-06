@@ -1,5 +1,5 @@
 .promo {
-  padding: 120px 0;
+  padding: 120px 0 106px;
 
   @include vp-1365 {
     padding: 100px 0;
@@ -139,6 +139,7 @@
   width: fit-content;
   padding: 10px 10px;
   margin-top: auto;
+  margin-left: -10px;
 
   &:hover {
     opacity: 0.8;
@@ -255,6 +256,7 @@
   text-transform: uppercase;
   position: relative;
   width: fit-content;
+  margin-left: -10px;
 
   &:hover {
     opacity: 0.8;

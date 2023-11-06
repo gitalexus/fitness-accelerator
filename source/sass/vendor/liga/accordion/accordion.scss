@@ -1,0 +1,115 @@
+.accordion {
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    border-bottom: 1px solid rgba(28, 51, 116, 0.20)
+  }
+
+  &__element {
+    border-top: 1px solid rgba(28, 51, 116, 0.20);
+  }
+
+  &__element.is-active > &__button {
+    opacity: 1;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 30px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    padding: 0;
+    margin-top: 0px;
+    color: #102654;
+    width: 660px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.accordion__icon {
+  position: absolute;
+  top: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 0;
+  background-color: #ffffff;
+  outline: 1px solid #1C3374;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1C3374;
+  }
+}
+
+.accordion__element.is-active .accordion__icon {
+  background-color: #1C3374;;
+}
+
+.btn--accordion:disabled .accordion__icon {
+  opacity: 0.3;
+}
+
+.accordion__element .accordion__icon::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  background-color: #1C3374;
+}
+
+.accordion__element.is-active .accordion__icon::after {
+  content: none;
+}
+
+.accordion__element.is-active .accordion__icon::before {
+  background-color: #ffffff;
+}
+
+
+.btn--accordion:hover .accordion__icon {
+  background-color: #1C3374;
+
+}
+
+.btn--accordion:hover .accordion__icon::after {
+  background-color: #ffffff;
+}
+
+.btn--accordion:hover .accordion__icon::before {
+  background-color: #ffffff;
+}
+
+.btn--accordion:focus .accordion__icon {
+  background-color: #1C3374;
+}
+
+.btn--accordion:focus .accordion__icon::after {
+  background-color: #ffffff;
+}
+
+.btn--accordion:focus .accordion__icon::before {
+  background-color: #ffffff;
+}
