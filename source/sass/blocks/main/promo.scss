@@ -2,11 +2,11 @@
   padding: 120px 0 106px;
 
   @include vp-1365 {
-    padding: 100px 0;
+    padding: 100px 0 85px;
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 70px 0 57px;
   }
 }
 
@@ -141,6 +141,10 @@
   margin-top: auto;
   margin-left: -10px;
 
+  @include vp-767 {
+    margin-left: 0;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -257,6 +261,10 @@
   position: relative;
   width: fit-content;
   margin-left: -10px;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 
   &:hover {
     opacity: 0.8;

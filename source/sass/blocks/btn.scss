@@ -4,21 +4,16 @@
   color: $text-color-main;
   background-color: $color-transparent;
   box-shadow: inset 0px 0px 0px 2px $text-color-main;
-
   border: none;
-
   cursor: pointer;
   text-align: center;
-
   font-family: $ff-secondary;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-
   user-select: none;
-
   transition: opacity $trans-default;
 
   &--inverse {
@@ -93,6 +88,17 @@
     box-shadow: inset 0px 0px 0px 1px $tab-color-stroke;
     letter-spacing: normal;
 
+    @include vp-1365 {
+      padding: 20px 48px 16px;
+      min-width: 21.09vw;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+      padding: 16px 48px 13px;
+    }
+
     @include hover-focus {
       box-shadow: inset 0px 0px 0px 1px $text-color-accent;
     }
@@ -113,6 +119,29 @@
     text-transform: none;
     box-shadow: none;
     position: relative;
+
+    @include vp-1365 {
+      padding: 34px 130px 32px 0;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    @include vp-767 {
+      padding: 22px 52px 22px 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &--accordion-narrow {
+    @include vp-1365 {
+      padding: 25px 130px 25px 0;
+    }
+
+    @include vp-767 {
+      padding: 21px 49px 21px 0;
+    }
   }
 
 }
@@ -120,9 +149,17 @@
 .btn--tab.is-active {
   box-shadow: none;
   color: $text-color-inverse;
-  background: $button-gradient-color-extra;
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+
+  @include vp-1365 {
+    background: linear-gradient(120deg, #ED0233 17.6%, #003EB7 95.31%);
+  }
 }
 
 [data-accordion="element"].is-active .btn--accordion {
   padding-bottom: 11px;
+
+  @include vp-767 {
+    padding-bottom: 20px;
+  }
 }
