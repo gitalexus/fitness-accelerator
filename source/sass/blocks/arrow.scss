@@ -37,10 +37,21 @@
   &--right svg {
     rotate: 180deg;
   }
+
+  &--reviews {
+    width: 80px;
+    height: 80px;
+  }
+
 }
 
 
 .arrow svg {
   width: 10px;
   height: 19px;
+}
+
+.arrow--reviews svg {
+  width: 21px;
+  height: 35px;
 }
