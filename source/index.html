@@ -191,19 +191,19 @@
           <div class="container">
             <h2 class="jury__title title">Жюри</h2>
             <div class="jury__slider-wrapper">
-              <button class="jury__button jury__button--prev arrow " data-juryPrevButton aria-label="Предыдущий" type="button">
+              <button class="jury__button jury__button--prev arrow " aria-label="Предыдущий" type="button" data-button="prev-jury">
                 <svg width="18" height="34" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#arrow"></use>
                 </svg>
               </button>
-              <button class="jury__button jury__button--next arrow arrow--right " data-juryNextButton aria-label="Следующий" type="button">
+              <button class="jury__button jury__button--next arrow arrow--right " aria-label="Следующий" type="button" data-button="next-jury">
                 <svg width="18" height="34" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#arrow"></use>
                 </svg>
               </button>
-              <div class="jury__slider swiper">
+              <div class="jury__slider swiper" data-swiper-jury>
                 <ul class="jury__list swiper-wrapper">
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-1.webp 1x, img/jury/photo-1@2x.webp 2x">
@@ -222,7 +222,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-2.webp 1x, img/jury/photo-2@2x.webp 2x">
@@ -241,7 +241,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-3.webp 1x, img/jury/photo-3@2x.webp 2x">
@@ -260,7 +260,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-4.webp 1x, img/jury/photo-4@2x.webp 2x">
@@ -279,7 +279,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-5.webp 1x, img/jury/photo-5@2x.webp 2x">
@@ -298,7 +298,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-6.webp 1x, img/jury/photo-6@2x.webp 2x">
@@ -317,7 +317,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-7.webp 1x, img/jury/photo-7@2x.webp 2x">
@@ -336,7 +336,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="jury__item swiper-slide" data-juryItem tabindex="0">
+                  <li class="jury__item swiper-slide" data-juryItem data-slide>
                     <article class="jury__card">
                       <picture>
                         <source media="image/jpeg" srcset="img/jury/photo-8.webp 1x, img/jury/photo-8@2x.webp 2x">
@@ -650,6 +650,43 @@
             </div>
           </div>
         </section>
+        <section class="reviews">
+          <div class="container">
+            <h2 class="title">Отзывы</h2>
+            <div class="reviews__swiper-wrapper">
+              <div class="swiper" data-swiper-reviews>
+                <!-- slides -->
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide" data-slide>
+                    <picture>
+                      <source type="image/webp" srcset="img/reviews/review-1.webp 1x, img/reviews/review-1@2x.webp 2x">
+                      <img src="img/reviews/review-1.jpg" srcset="img/reviews/review-1.jpg 1x, img/reviews/review-1@2x.jpg 2x" alt="" >
+                    </picture>
+                  </div>
+                  <div class="swiper-slide" data-slide>Slide 2</div>
+                  <div class="swiper-slide" data-slide>Slide 3</div>
+                </div>
+
+              </div>
+              <!-- navigation buttons -->
+              <button class="swiper-button-prev" data-button-prev-reviews></button>
+              <button class="swiper-button-next" data-button-next-reviews></button>
+
+              <!-- <button class="jury__button jury__button--prev arrow " data-juryPrevButton aria-label="Предыдущий" type="button">
+                <svg width="18" height="34" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="jury__button jury__button--next arrow arrow--right " data-juryNextButton aria-label="Следующий" type="button">
+                <svg width="18" height="34" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button> -->
+
+            </div>
+          </div>
+        </section>
+
       </main>
       <footer>
         <div class="container">
