@@ -289,7 +289,9 @@
 }
 
 .advantages__item--narrow p {
-  width: 50.03vw;
-  min-width: 161px;
-  padding: 0;
+  @include vp-767 {
+    width: 50.03vw;
+    min-width: 161px;
+    padding: 0;
+  }
 }
