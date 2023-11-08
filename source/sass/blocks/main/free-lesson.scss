@@ -12,7 +12,7 @@
 
 .free-lesson__inputs-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
   gap: 30px;
   margin-bottom: 28px;
 }
