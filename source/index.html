@@ -741,13 +741,22 @@
           <!-- бесплатное занятие -->
           <section class="free-lesson">
             <h2 class="free-lesson__title title">Бесплатное занятие</h2>
-            <form action="https://echo.htmlacademy.ru/">
-              <div class="free-lesson__inputs-wrapper">
-                <input class="form-field" type="text"name="name" placeholder="Имя" aria-label="Имя" required>
-                <input class="form-field" type="text"name="phone" placeholder="Телефон" aria-label="Телефон" required>
-              </div>
-              <button class="btn btn--inverse btn--stretch" type="submit">Отправить</button>
-            </form>
+            <div class="form" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="free-lesson__inputs-wrapper">
+                  <div class="name-wrapper" data-validate-type="text" data-limitation="name" ,
+                    data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
+                    data-on-input-validate data-required>
+                    <input class="form-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+                  </div>
+                  <div class="phone-wrapper" data-validate-type="phone" data-on-input-validate
+                    data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
+                    <input class="form-field" type="text" name="phone" placeholder="Телефон" aria-label="Телефон" required>
+                  </div>
+                </div>
+                <button class="btn btn--inverse btn--stretch" type="submit">Отправить</button>
+              </form>
+            </div>
           </section>
           <!-- Контакты -->
           <section class="contacts">

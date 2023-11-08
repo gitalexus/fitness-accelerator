@@ -8,6 +8,7 @@
   padding: 8px 4px 3px;
   border: 2px solid transparent;
   border-bottom-color: rgba($text-color-inverse, 0.5);
+  width: 100%;
 
   &:hover:not(:disabled) {
     border-bottom-color: $text-color-inverse;
@@ -24,3 +25,10 @@
   }
 }
 
+.is-invalid .form-field:not(:disabled) {
+  border-bottom-color: $form-color-error;
+}
+
+.input-message.is-invalid {
+  color: $form-color-error
+}
