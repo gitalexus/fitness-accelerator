@@ -65,8 +65,11 @@
 
   &__content {
     margin-bottom: 40px;
-
     transition: height 0.3s;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 
   &__element {
