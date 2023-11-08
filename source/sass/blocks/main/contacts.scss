@@ -1,0 +1,28 @@
+.contacts {
+  padding: 60px 163px 64px 120px;
+}
+
+.contacts__title {
+  text-align: left;
+  margin-bottom: 41px;
+}
+
+.contacts__list {
+  display: grid;
+  grid-template-columns: 200px 180px;
+  row-gap: 15px;
+  column-gap: 90px;
+  margin: 0;
+}
+
+.contacts__label {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
