@@ -1,9 +1,17 @@
 .reviews {
   padding: 120px 0 119px;
+
+  @include vp-1365 {
+    padding: 101px 0 119px;
+  }
 }
 
 .reviews__title {
   margin-bottom: 46px;
+
+  @include vp-1365 {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__swiper {
@@ -11,6 +19,10 @@
   position: relative;
   z-index: 2;
   box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.20);
+
+  @include vp-1365 {
+    width: 580px;
+  }
 }
 
 .review__slides-list {
@@ -24,6 +36,12 @@
   grid-template-columns: 80px 1fr;
   gap: 30px;
   min-height: 259px;
+
+  @include vp-1365 {
+    // grid-template-columns: 80px 1fr;
+    padding: 60px 65px;
+    min-height: 249px;
+  }
 }
 
 .reviews__swiper-wrapper {
@@ -51,6 +69,12 @@
   margin-bottom: 21px;
   letter-spacing:  normal;
   padding: 0;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 }
 
 .reviews__slider-text-content p {
@@ -72,4 +96,8 @@
   width: 735px;
   display: flex;
   justify-content: space-between;
+
+  @include vp-1365 {
+    width: 741px;
+  }
 }

@@ -20,18 +20,14 @@
     outline: 1px solid $text-color-main;
   }
 
-  @include active {
-    color: $text-color-inverse;
-    background-color: $bg-color-dark;
-  }
-
-  &:active {
+  &:active:not(:disabled) {
     color: $text-color-inverse;
     background-color: $bg-color-dark;
   }
 
   &:disabled {
     opacity: 0.3;
+    cursor: default;
   }
 
   &--right svg {
@@ -41,6 +37,11 @@
   &--reviews {
     width: 80px;
     height: 80px;
+
+    @include vp-1365 {
+      width: 75px;
+      height: 75px;
+    }
   }
 
 }
