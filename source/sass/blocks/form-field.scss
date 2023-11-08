@@ -1,0 +1,26 @@
+.form-field {
+  color: $text-color-inverse;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: grey;
+  background-color: $button-color-stroke-inverse;
+  padding: 8px 4px 3px;
+  border: 2px solid transparent;
+  border-bottom-color: rgba($text-color-inverse, 0.5);
+
+  &:hover:not(:disabled) {
+    border-bottom-color: $text-color-inverse;
+  }
+
+  &:active:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    border-color: $text-color-inverse;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+

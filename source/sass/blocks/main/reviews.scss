@@ -1,5 +1,5 @@
 .reviews {
-  padding: 120px 0 119px;
+  padding: 120px 0 120px;
 
   @include vp-1365 {
     padding: 101px 0 119px;
@@ -38,7 +38,6 @@
   }
 
   @include vp-767 {
-    // width: calc(100vw - 47px * 2);
     width: 226px;
   }
 }
@@ -153,7 +152,6 @@
   }
 
   @include vp-767 {
-    // width: calc(100vw - 8px);
     width: 312px;
   }
 }

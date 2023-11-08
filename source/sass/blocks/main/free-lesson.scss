@@ -1,0 +1,18 @@
+.free-lesson {
+  padding: 59px 170px 60px 103px;
+  background-color: $button-color-stroke-inverse;
+}
+
+.free-lesson__title {
+  color: $text-color-inverse;
+  font-family: Alumni Sans;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.free-lesson__inputs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 28px;
+}
