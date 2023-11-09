@@ -2,4 +2,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   min-height: 337px;
+
+  @include vp-1365 {
+    display: block;
+  }
 }

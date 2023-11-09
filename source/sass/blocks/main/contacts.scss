@@ -1,28 +1,115 @@
 .contacts {
   padding: 60px 163px 64px 120px;
+
+  @include vp-1365 {
+    padding: 100px 27.86vw 100px 17.31vw;
+  }
+
+  @include vp-767 {
+    padding: 66px 15px 70px;
+  }
 }
 
 .contacts__title {
   text-align: left;
   margin-bottom: 41px;
+
+  @include vp-1365 {
+    font-family: Alumni Sans;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-1365 {
+    margin-bottom: 38px;
+    color: #102654;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .contacts__list {
+  position: relative;
   display: grid;
   grid-template-columns: 200px 180px;
   row-gap: 15px;
   column-gap: 90px;
   margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 220px;
+    background-color: $form-color-delimiter;
+
+    @include vp-1365 {
+      left: 251px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1365 {
+    row-gap: 28px;
+    column-gap: 111px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__item {
+  @include vp-767 {
+    &--oreder-2 {
+      order: 2;
+    }
+
+    &--oreder-3 {
+      order: 3;
+    }
+    &--oreder-4 {
+      order: 4;
+    }
+  }
+
 }
 
 .contacts__label {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 6px;
+
+  @include vp-1365 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include vp-1365 {
+    margin-bottom: 10px;
+    color: #102654;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 .contacts__text {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+
+  @include vp-1365 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
