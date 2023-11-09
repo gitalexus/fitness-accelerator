@@ -1,11 +1,31 @@
 .footer {
   color: $text-color-inverse;
   background-color: $bg-color-footer;
+
+  @include vp-767 {
+    padding: 27px 15px 45px;
+  }
 }
 
 .footer__logo {
-  width: 100px;
-  height: 22px;
+  width: 109px;
+  height: 24px;
+
+  @include vp-1365 {
+    width: 100px;
+    height: 22px;
+  }
+
+  @include vp-767 {
+    width: 90px;
+    height: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__container {
@@ -18,8 +38,18 @@
   @include vp-1365 {
     padding-top: 46px;
     padding-bottom: 44px;
-    grid-template-columns: 110px 1fr 110px;
-    gap: 20px;
+    grid-template-columns: 100px 1fr 100px;
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: auto;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -27,18 +57,60 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 21px;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @include vp-1365 {
-    column-gap: 30px;
+    column-gap: 10px;
     row-gap: 10px;
+  }
+
+  @include vp-767 {
+    justify-content: flex-start;
+    transform: translateX(-10px);
+    column-gap: 15px;
+    row-gap: 16px;
+    margin-bottom: 53px;
   }
 }
 
 .footer__link {
+  position: relative;
   color: $text-color-inverse;
-  padding: 15px 0;
+  padding: 5px 10px;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    bottom: 0;
+    background-color: $text-color-inverse;
+    text-decoration: underline;
+  }
+
+  &:active::after {
+    content: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $text-color-inverse;
+  }
+}
+
+.footer__link--disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.footer__link--disabled:hover::after {
+  content: none;
+}
+
+.footer__link--disabled:focus-visible {
+  outline: none;
 }

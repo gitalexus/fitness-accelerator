@@ -71,14 +71,14 @@
 
 .contacts__item {
   @include vp-767 {
-    &--oreder-2 {
+    &--order-2 {
       order: 2;
     }
 
-    &--oreder-3 {
+    &--order-3 {
       order: 3;
     }
-    &--oreder-4 {
+    &--order-4 {
       order: 4;
     }
   }
@@ -113,5 +113,26 @@
   @include vp-1365 {
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+.contacts__link {
+  padding: 10px;
+  margin-left: -10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $text-color-main;
+  }
+
+  @include active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
