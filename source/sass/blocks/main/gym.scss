@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 71px 0 70px;
   }
 }
 
@@ -29,7 +29,7 @@
     padding: 0 26px 0 15px;
     width: 100%;
     text-align: left;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 }
 
@@ -70,6 +70,7 @@
 
   @include vp-767 {
     height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -96,7 +97,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     font-size: 32px;
     line-height: 32px;
@@ -120,9 +121,12 @@
   }
 
   @include vp-767 {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
+    font-weight: 400;
+    width: calc(100% + 2px);
     font-size: 18px;
     line-height: 20px;
+    letter-spacing: normal;
     transform: none;
   }
 }

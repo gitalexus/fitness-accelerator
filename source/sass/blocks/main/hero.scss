@@ -28,7 +28,7 @@
     grid-template-columns: 114px 162px;
     width: 290px;
     gap: 14px;
-    padding-bottom: 111px;
+    padding-bottom: 114px;
     margin: 0 auto;
   }
 }
@@ -159,7 +159,7 @@
 
   @include vp-767 {
     position: absolute;
-    bottom: 69px;
+    bottom: 72px;
     left: 0;
     right: 0;
     justify-content: center;
