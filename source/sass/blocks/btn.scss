@@ -43,7 +43,6 @@
   }
 
   &--blue-bg {
-    background-color: $bg-color-main;
     width: 100%;
 
     @include vp-1365 {
@@ -53,21 +52,6 @@
 
     @include vp-767 {
       padding: 23px 44px 21px 44px;
-    }
-
-    @include hover-focus {
-      box-shadow: none;
-      color: $text-color-inverse;
-      background: $button-linear-gradient;
-    }
-
-    @include active {
-      color: rgba($text-color-inverse, 0.7);
-    }
-
-    &:disabled {
-      opacity: 0.3;
-      cursor: auto;
     }
   }
 
@@ -143,7 +127,6 @@
       padding: 21px 49px 21px 0;
     }
   }
-
 }
 
 .btn--tab.is-active {
@@ -161,5 +144,31 @@
 
   @include vp-767 {
     padding-bottom: 20px;
+  }
+}
+
+.subscriptions__item:hover .btn--blue-bg:not(:disabled),
+.subscriptions__item .btn--blue-bg:focus-visible,
+.subscriptions__item .btn.btn--blue-bg--main {
+  outline: none;
+  box-shadow: none;
+  color: $text-color-inverse;
+  background: $button-linear-gradient;
+}
+
+.subscriptions__item .btn--blue-bg {
+  &:hover:not(:disabled) {
+    background: $bg-color-main;
+    box-shadow: inset 0px 0px 0px 2px $text-color-main;
+    color: $text-color-accent;
+  }
+
+  &:active {
+    color: $text-color-main;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
   }
 }
