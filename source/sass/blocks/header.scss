@@ -23,7 +23,12 @@
 
 .header__link-logo {
   display: block;
+
+  @include vp-767 {
+    transform: translate(0, 1px);
+  }
 }
+
 .header__link-logo img{
   display: block;
 }

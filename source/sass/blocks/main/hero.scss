@@ -68,7 +68,7 @@
   }
 
   @include vp-767 {
-    transform: none;
+    transform: translate(-1px, 1px);
     padding: 159px 0 50px;
     align-self: start;
     line-height: 20px;
@@ -117,6 +117,8 @@
     line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 14px;
+
+    transform: translateY(1px);
   }
 }
 
@@ -141,13 +143,23 @@
     line-height: 70px;
     letter-spacing: 1.86px;
     margin-bottom: 60px;
+    text-edge: cap;
+
+    transform: translateY(0.5px);
   }
 }
 
 .hero__action-link {
+
+  width: 231px;
+
+  @include vp-1365 {
+    width: 100%;
+  }
+
   @include vp-767 {
     position: absolute;
-    bottom: 70px;
+    bottom: 69px;
     left: 0;
     right: 0;
     justify-content: center;
@@ -155,5 +167,12 @@
     transform: translateX(-50%);
     width: 90.62vw;
     min-width: 290px;
+
+    font-family: Roboto Condensed;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px; /* 100% */
+    letter-spacing: 0.6px;
   }
 }
