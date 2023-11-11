@@ -4,11 +4,11 @@
   font-family: $ff-secondary;
 
   @include vp-1365 {
-    padding: 100px 0 86px;
+    padding: 101px 0 86px;
   }
 
   @include vp-767 {
-    padding: 70px 0 35px;
+    padding: 72px 0 33px;
   }
 }
 
@@ -19,10 +19,10 @@
 }
 
 .advantages__title {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
   @include vp-1365 {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   @include vp-767 {
@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 11px;
+    gap: 9px;
     margin-bottom: 35px;
   }
 
@@ -174,6 +174,68 @@
   }
 }
 
+.advantages__item-1 h3 {
+  @include vp-1365 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item-2 h3 {
+  @include vp-1365 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 19px;
+  }
+}
+
+
+.advantages__item-3,
+.advantages__item-4 {
+  @include vp-1365 {
+    transform: translateY(1px);
+  }
+
+  @include vp-767 {
+    transform: none;
+  }
+
+}
+
+
+.advantages__item-3 {
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item-3 h3 {
+  @include vp-1365 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    margin-top: 1px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item-4 h3 {
+  @include vp-1365 {
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    margin-top: 1px;
+    margin-bottom: 13px;
+  }
+}
+
 .advantage_text-content p {
   margin: 0;
   font-size: 16px;
@@ -191,13 +253,7 @@
 
 .advantage_text-content--second p {
   @include vp-767 {
-    transform: translate(2px, -6px);
-  }
-}
-
-.advantage_text-content--comfort h3 {
-  @include vp-767 {
-    margin-bottom: 6px;
+    transform: translate(0, -6px);
   }
 }
 
@@ -222,11 +278,11 @@
   }
 
   @include vp-767 {
-    margin-top: -3px;
+    margin-top: -2px;
     margin-bottom: 12.5vw;
     width: 100%;
-    padding: 29px 74px;
-    min-height: 224px;
+    padding: 30px 74px;
+    min-height: 225px;
   }
 }
 
@@ -238,7 +294,7 @@
   line-height: 70px;
 
   @include vp-1365 {
-    margin-bottom: 3.2vw;
+    margin-bottom: 3.4vw;
   }
 
   @include vp-767 {
@@ -264,7 +320,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 5.82vw;
+    margin-bottom: 6.5vw;
   }
 }
 
@@ -285,6 +341,7 @@
     margin: 0;
     font-size: 14px;
     line-height: 22px;
+    font-weight: 300;
   }
 }
 

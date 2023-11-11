@@ -93,6 +93,10 @@
   background: $linear-gradient-angel;
 }
 
+.subscriptions__item button {
+  transform: translateY(-1px);
+}
+
 
 .subscriptions__card {
   position: relative;
