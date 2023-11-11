@@ -2,9 +2,9 @@
 const videoId = '9TZXsZItgdw';
 
 function initVideo() {
-  const videoContainer = document.querySelector('.gym__video');
-  const playButton = document.querySelector('.gym__video button');
-  const placeHolder = document.querySelector('.gym__video img');
+  const videoContainer = document.querySelector('[data-video]');
+  const playButton = document.querySelector('[data-video] button');
+  const placeHolder = document.querySelector('[data-video] img');
 
   if (playButton !== null && videoContainer !== null && placeHolder !== null) {
     playButton.addEventListener('click', ()=> {

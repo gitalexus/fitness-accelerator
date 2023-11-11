@@ -42,7 +42,7 @@
               <div class="hero__action-scope">
                 <p class="hero__city">Омск</p>
                 <p class="hero__caption">Фитнес центр</p>
-                <button class="btn btn--inverse btn--stretch hero__action-link" type="button">Купить абонемент</button>
+                <button class="btn btn--inverse btn--stretch hero__action-link" data-action-btn type="button">Купить абонемент</button>
               </div>
               <div class="hero__image-wrapper">
                 <picture>
@@ -74,7 +74,7 @@
             <source media="(max-width: 1365px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg">
             <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" alt="" width="660" height="401">
           </picture>
-          <div class="gym__video">
+          <div class="gym__video" data-video>
             <button class="play-button" type="button">
             </button>
             <picture>
@@ -90,22 +90,22 @@
             <h2 class="subscriptions__title title">Абонементы</h2>
             <ul class="subscriptions__tabs">
               <li class="subscriptions__tabs-item">
-                <button class="subscriptions__tab tab tab--active">1 месяц</button>
+                <button class="subscriptions__tab tab is-active" data-tab>1 месяц</button>
               </li>
               <li class="subscriptions__tabs-item">
-                <button class="subscriptions__tab tab">6 месяцев</button>
+                <button class="subscriptions__tab tab" data-tab>6 месяцев</button>
               </li>
               <li class="subscriptions__tabs-item">
-                <button class="subscriptions__tab tab">12 месяцев</button>
+                <button class="subscriptions__tab tab" data-tab>12 месяцев</button>
               </li>
             </ul>
             <ul class="subscriptions__list">
               <li class="subscriptions__item">
-                <article class="subscriptions__card">
+                <article class="subscriptions__card" data-subscription-card>
                   <h3 class="subscriptions__card-title">С тренером</h3>
                   <p class="subscriptions__desc">12 занятий</p>
                   <div class="subscriptions__price-wrapper">
-                    <p class="subscriptions__price" data-text="5000">5000</p>
+                    <p class="subscriptions__price" data-subscription-price data-text="5000">5000</p>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use href="img/sprite.svg#rouble"></use>
                     </svg>
@@ -114,11 +114,11 @@
                 </article>
               </li>
               <li class="subscriptions__item subscriptions__item--main-offer">
-                <article class="subscriptions__card">
+                <article class="subscriptions__card" data-subscription-card>
                   <h3 class="subscriptions__card-title">Дневной</h3>
                   <p class="subscriptions__desc">с 8:00 до 17:00 </p>
                   <div class="subscriptions__price-wrapper">
-                    <p class="subscriptions__price" data-text="1700">1700</p>
+                    <p class="subscriptions__price" data-subscription-price data-text="1700">1700</p>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use href="img/sprite.svg#rouble"></use>
                     </svg>
@@ -127,11 +127,11 @@
                 </article>
               </li>
               <li class="subscriptions__item">
-                <article class="subscriptions__card">
+                <article class="subscriptions__card" data-subscription-card>
                   <h3 class="subscriptions__card-title">Полный день</h3>
                   <p class="subscriptions__desc">с 8:00 до 22:00 </p>
                   <div class="subscriptions__price-wrapper">
-                    <p class="subscriptions__price" data-text="2700">2700</p>
+                    <p class="subscriptions__price" data-subscription-price data-text="2700">2700</p>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use href="img/sprite.svg#rouble"></use>
                     </svg>
@@ -743,7 +743,7 @@
           <section class="free-lesson">
             <div class="free-lesson__content-container">
               <h2 class="free-lesson__title title">Бесплатное занятие</h2>
-              <div class="form" data-form-validate data-callback="base">
+              <div class="form" data-form-node  data-form-validate data-callback="base">
                 <form action="https://echo.htmlacademy.ru/" method="post">
                   <div class="free-lesson__inputs-wrapper">
                     <div class="name-wrapper" data-validate-type="text" data-limitation="name" ,

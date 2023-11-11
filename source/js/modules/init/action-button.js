@@ -1,6 +1,6 @@
 function initActionButton() {
   const subscription = document.querySelector('#subscriptions');
-  const heroActionButton = document.querySelector('.hero__action-link');
+  const heroActionButton = document.querySelector('[data-action-btn]');
 
   if (subscription !== null && heroActionButton !== null) {
     heroActionButton.addEventListener('click', ()=> {
