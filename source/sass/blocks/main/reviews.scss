@@ -19,11 +19,12 @@
   margin-bottom: 46px;
 
   @include vp-1365 {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   @include vp-767 {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
+    transform: translateX(-1px);
   }
 }
 
@@ -44,6 +45,7 @@
 
 .review__slides-list {
   margin: 0;
+  padding-left: 0;
 }
 
 .reviews__slide {
@@ -60,11 +62,11 @@
   }
 
   @include vp-767 {
-    padding: 30px 25px;
+    padding: 31px 25px 29px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
     min-height: 328px;
   }
 }
@@ -128,12 +130,13 @@
   line-height: 24px;
 
   @include vp-1365 {
-    font-size: 14px;
-    line-height: 22px;
   }
 
   @include vp-767 {
     text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+
   }
 }
 

@@ -20,7 +20,6 @@
   </head>
   <body>
     <div class="wrapper">
-
       <header class="header">
         <div class="container header__container">
           <a href="index.html" class="header__link-logo" aria-label="Перейти на главную страницу.">
@@ -470,7 +469,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--accordion btn--accordion-2" type="button" data-accordion="button">
                         Где можно посмотреть расписание?
                         <span class="accordion__icon" aria-hidden></span>
                       </button>
@@ -481,7 +480,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--accordion btn--accordion-3" type="button" data-accordion="button">
                         Есть кулеры в центре? Предоставляются полотенца?
                         <span class="accordion__icon" aria-hidden></span>
                       </button>
@@ -737,25 +736,29 @@
             </div>
           </div>
         </section>
+      </main>
+      <footer data-test="footer">
         <div class="wrapper-two-sections">
           <!-- бесплатное занятие -->
           <section class="free-lesson">
-            <h2 class="free-lesson__title title">Бесплатное занятие</h2>
-            <div class="form" data-form-validate data-callback="base">
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                <div class="free-lesson__inputs-wrapper">
-                  <div class="name-wrapper" data-validate-type="text" data-limitation="name" ,
-                    data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
-                    data-on-input-validate data-required>
-                    <input class="form-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+            <div class="free-lesson__content-container">
+              <h2 class="free-lesson__title title">Бесплатное занятие</h2>
+              <div class="form" data-form-validate data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="free-lesson__inputs-wrapper">
+                    <div class="name-wrapper" data-validate-type="text" data-limitation="name" ,
+                      data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
+                      data-on-input-validate data-required>
+                      <input class="form-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+                    </div>
+                    <div class="phone-wrapper" data-validate-type="phone" data-on-input-validate
+                      data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
+                      <input class="form-field" type="text" name="phone" placeholder="Телефон" aria-label="Телефон" required>
+                    </div>
                   </div>
-                  <div class="phone-wrapper" data-validate-type="phone" data-on-input-validate
-                    data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
-                    <input class="form-field" type="text" name="phone" placeholder="Телефон" aria-label="Телефон" required>
-                  </div>
-                </div>
-                <button class="btn btn--inverse btn--stretch" type="submit">Отправить</button>
-              </form>
+                  <button class="btn btn--inverse btn--stretch" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </section>
           <!-- Контакты -->
@@ -785,53 +788,52 @@
             </dl>
           </section>
         </div>
-
-      </main>
-      <footer class="footer" data-test="footer">
-        <div class="footer__container container">
-          <a href="index.html" class="footer__logo" aria-label="Перейти на главную страницу">
-            <img src="img/svg/logo-footer.svg" width="109" height="24" alt="">
-          </a>
-          <ul class="footer__navigation">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Услуги</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link footer__link" href="#">Абонементы</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Акции</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Тренеры</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Расписание</a>
-            </li>
-          </ul>
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="вконтакте">
-                <svg aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="одноклассники">
-                <svg aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#odnoklassniki"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link" href="#" aria-label="reddit">
-                <svg aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#reddit"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer">
+          <div class="footer__container container">
+            <a href="index.html" class="footer__logo" aria-label="Перейти на главную страницу">
+              <img src="img/svg/logo-footer.svg" width="109" height="24" alt="">
+            </a>
+            <ul class="footer__navigation">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Услуги</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link footer__link" href="#">Абонементы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Акции</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Тренеры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Расписание</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="вконтакте">
+                  <svg aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="одноклассники">
+                  <svg aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#odnoklassniki"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link" href="#" aria-label="reddit">
+                  <svg aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

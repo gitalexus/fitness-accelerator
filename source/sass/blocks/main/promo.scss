@@ -200,7 +200,7 @@
   color: $button-color-stroke-extra;
 
   @include vp-767 {
-    padding: 39px 58px 28px;
+    padding: 39px 57px 28px;
     align-items: center;
 
     &:not(:last-child) {
@@ -267,7 +267,7 @@
   }
 
   &:hover {
-    opacity: 0.8;
+  opacity: 0.8;
   }
 
   &:focus-visible {

@@ -35,10 +35,10 @@ const reviewsSliderOptions = {
   },
   slidesPerView: 1,
   loop: false,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
 };
 
 
