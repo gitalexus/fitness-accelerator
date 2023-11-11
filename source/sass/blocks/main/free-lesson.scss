@@ -13,9 +13,9 @@
 }
 
 .free-lesson__content-container {
-  width: 580px;
+  width: 410px;
   margin-left: auto;
-  padding-right: 170px;
+  padding-right: 0;
 
   @include vp-1365 {
     width: 100%;
