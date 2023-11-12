@@ -42,12 +42,25 @@
 
   @include hover-focus {
     color: $button-color-stroke-extra;
+    outline: none;
   }
 
   @include active {
     color: $text-color-main;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $text-color-main;
+    }
   }
 
+  &:disabled,
   &--disabled {
     color: $bg-color-extra;
   }

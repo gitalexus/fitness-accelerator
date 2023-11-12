@@ -10,6 +10,7 @@
   line-height: 20px;
   cursor: pointer;
   position: relative;
+  transition: opacity 0.3s ease;
 
   @include vp-1365 {
     font-size: 18px;
@@ -20,6 +21,17 @@
     font-size: 16px;
     line-height: 16px; /* 100% */
     padding: 15px 0 16px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $bg-color-banner;
+    bottom: -1px;
+    transition: width 0.3s ease;
   }
 
   &.is-active {
@@ -39,6 +51,7 @@
 
   @include hover-focus {
     opacity: 1;
+    outline: none;
 
     &::after {
       content: "";
