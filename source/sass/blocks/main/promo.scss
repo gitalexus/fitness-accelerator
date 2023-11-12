@@ -180,7 +180,7 @@
 
   @include vp-1365 {
     width: 100%;
-    height: 100%
+    height: 100%;
   }
 
   @include vp-767 {
@@ -247,7 +247,6 @@
     font-size: 14px;
     line-height: 22px;
   }
-
 }
 
 .promo__item a {
@@ -267,7 +266,7 @@
   }
 
   &:hover {
-  opacity: 0.8;
+    opacity: 0.8;
   }
 
   &:focus-visible {

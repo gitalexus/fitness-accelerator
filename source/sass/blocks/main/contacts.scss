@@ -15,7 +15,7 @@
   margin-bottom: 41px;
 
   @include vp-1365 {
-    font-family: Alumni Sans;
+    font-family: $ff-primary;
     font-size: 42px;
     font-weight: 700;
     line-height: normal;
@@ -79,11 +79,11 @@
     &--order-3 {
       order: 3;
     }
+
     &--order-4 {
       order: 4;
     }
   }
-
 }
 
 .contacts__label {

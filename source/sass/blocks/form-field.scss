@@ -1,6 +1,6 @@
 .form-field {
   color: $text-color-inverse;
-  font-family: Roboto Condensed;
+  font-family: $ff-secondary;
   font-size: 14px;
   line-height: 22px;
   background-color: $button-color-stroke-inverse;
@@ -50,5 +50,5 @@
 }
 
 .input-message.is-invalid {
-  color: $form-color-error
+  color: $form-color-error;
 }

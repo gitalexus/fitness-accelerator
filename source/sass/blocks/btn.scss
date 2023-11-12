@@ -3,7 +3,7 @@
   padding: 27px 43px 27px 44px;
   color: $text-color-main;
   background-color: $color-transparent;
-  box-shadow: inset 0px 0px 0px 2px $text-color-main;
+  box-shadow: inset 0 0 0 2px $text-color-main;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -18,7 +18,7 @@
 
   &--inverse {
     color: $text-color-inverse;
-    box-shadow: inset 0px 0px 0px 2px $text-color-inverse;
+    box-shadow: inset 0 0 0 2px $text-color-inverse;
     padding: 27px 57px;
 
     @include vp-1365 {
@@ -69,7 +69,7 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
-    box-shadow: inset 0px 0px 0px 1px $tab-color-stroke;
+    box-shadow: inset 0 0 0 1px $tab-color-stroke;
     letter-spacing: normal;
 
     @include vp-1365 {
@@ -84,12 +84,12 @@
     }
 
     @include hover-focus {
-      box-shadow: inset 0px 0px 0px 1px $text-color-accent;
+      box-shadow: inset 0 0 0 1px $text-color-accent;
     }
 
-    &:display {
+    &:disabled {
       color: $tab-disabled-color;
-      box-shadow: inset 0px 0px 0px 1px $tab-disabled-color;
+      box-shadow: inset 0 0 0 1px $tab-disabled-color;
     }
   }
 
@@ -148,10 +148,10 @@
 .btn--tab.is-active {
   box-shadow: none;
   color: $text-color-inverse;
-  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 
   @include vp-1365 {
-    background: linear-gradient(120deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(120deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
 
@@ -179,7 +179,7 @@
 .subscriptions__item .btn--blue-bg {
   &:hover:not(:disabled) {
     background: $bg-color-main;
-    box-shadow: inset 0px 0px 0px 2px $text-color-main;
+    box-shadow: inset 0 0 0 2px $text-color-main;
     color: $text-color-accent;
   }
 
@@ -197,6 +197,6 @@
   transform: translateY(4px);
 
   @include vp-767 {
-    transform: scale(.75) translateY(-62%);
+    transform: scale(0.75) translateY(-62%);
   }
 }
